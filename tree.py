@@ -29,7 +29,6 @@ def select_folder():
     folder_selected = filedialog.askdirectory()
     return folder_selected
 
-
 def main():
     base_ignored_folders = [
         'node_modules', '.git', 'dist', 'build', 'target', 'venv', 'env',
@@ -37,17 +36,17 @@ def main():
         '.next', '.nuxt'
     ]
 
-    parser = argparse.ArgumentParser(description='Generar un árbol de directorios ASCII.')
-    parser.add_argument('-i', '--ignore', nargs='*', help='Ignore the base folders and the specified ones', default=[])
-    parser.add_argument('-n', '--no-ignore', nargs='*', help='Ignore only the specified folders', default=[])
+    parser = argparse.ArgumentParser(description='Generate an ASCII directory tree.')
+    parser.add_argument('-i', '--ignore', nargs='*', help='Ignore the base folders and the specified ones', default=None)
+    parser.add_argument('-n', '--no-ignore', nargs='*', help='Ignore only the specified folders', default=None)
     args = parser.parse_args()
 
-    if args.ignore:
+    if args.ignore is not None:
         ignored_folders = base_ignored_folders + args.ignore
-    elif args.no_ignore:
+    elif args.no_ignore is not None:
         ignored_folders = args.no_ignore
     else:
-        ignored_folders = []
+        ignored_folders = base_ignored_folders
 
     folder_path = select_folder()
     if not folder_path:
