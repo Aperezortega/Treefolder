@@ -38,8 +38,8 @@ def main():
     ]
 
     parser = argparse.ArgumentParser(description='Generar un árbol de directorios ASCII.')
-    parser.add_argument('-i', '--ignore', nargs='*', help='Ignorar las carpetas base y las especificadas', default=[])
-    parser.add_argument('-n', '--no-ignore', nargs='*', help='Ignorar solo las carpetas especificadas', default=[])
+    parser.add_argument('-i', '--ignore', nargs='*', help='Ignore the base folders and the specified ones', default=[])
+    parser.add_argument('-n', '--no-ignore', nargs='*', help='Ignore only the specified folders', default=[])
     args = parser.parse_args()
 
     if args.ignore:
