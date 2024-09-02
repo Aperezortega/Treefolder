@@ -7,10 +7,12 @@ ___
 ## Overview
 
 Treefolder is a simple Python program that generates an ASCII representation of a directory tree.
-The function takes 2 parameters  -i or -n  and also the name of any folder that you want to ignore on the representation of the tree.
+The function takes 2 parameters -i or -n and also the name of any folder that you want to ignore on the representation of the tree.
 For example:
- - python tree.py -i sass images: This will ignore all the base folders and also sass and images folder.
- - python tree.py -n .git: This will ignore only the folder .git
+ - `python tree.py -i sass images`: This will ignore all the base folders and also sass and images folder.
+ - `python tree.py -n .git`: This will ignore only the folder .git
+
+** If installed using pip, the commands are `treefolder -i args` or `treefolder -n args`. **
 
 ## Features
 
@@ -34,9 +36,14 @@ For example:
 ### Installation
 
 1. **Clone the repository**:
-   - `git clone https://github.com/yourusername/treefolder.git`
+   - `git clone https://github.com/Aperezortega/Treefolder.git`
    - `cd treefolder`
    - `pip install -r requirements.txt`
+
+o
+
+2. **Install from PyPI**:
+   - `pip install treefolder`
 
 ### Usage
 
@@ -61,6 +68,8 @@ Por ejemplo:
 python tree.py -i sass images: Esto ignorará todas las carpetas base y también las carpetas sass e images.
 python tree.py -n .git: Esto ignorará solo la carpeta .git.
 
+** Si se installa usando pip los comandos serían treefolder -i args o treefolder -n args**
+
 ## Características
 
 - **Generación de Árbol de Directorios**: Crea una representación en ASCII de un árbol de directorios especificado.
@@ -82,10 +91,15 @@ python tree.py -n .git: Esto ignorará solo la carpeta .git.
 
 ### Instalación
 
-1. **Clonar el repositorio**:
-   - `git clone https://github.com/yourusername/treefolder.git`
+1. **Clone the repository**:
+   - `git clone https://github.com/Aperezortega/Treefolder.git`
    - `cd treefolder`
    - `pip install -r requirements.txt`
+
+o
+
+2. **Install from PyPI**:
+   - `pip install treefolder`
 
 ### Uso
 

@@ -1,8 +1,11 @@
 from setuptools import setup, find_packages
 
+with open('README.md', encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
     name='treefolder',
-    version='0.1.0',
+    version='0.1.1',
     packages=find_packages(),
     install_requires=[
         'tkinter',
@@ -15,7 +18,7 @@ setup(
     author='Alberto Perez Ortega',
     author_email='apo0106@gmail.com',
     description='A simple Python program that generates an ASCII representation of a directory tree.',
-    long_description=open('README.md').read(),
+    long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/Aperezortega/Treefolder',
     classifiers=[
