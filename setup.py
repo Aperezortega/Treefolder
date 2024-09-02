@@ -5,10 +5,10 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name='treefolder',
-    version='0.1.1',
+    version='1.0.0',
     packages=find_packages(),
     install_requires=[
-        'tkinter',
+
     ],
     entry_points={
         'console_scripts': [
